@@ -388,6 +388,71 @@ margin:0 auto;
 border-radius:20px;
 text-align: center;
 }
+/* Footer part CSS */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #01ACFD;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: left;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 2.18rem;
+    font-weight: bold;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    color:white;
+    text-decoration: none;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+  }
+  
 /* responsive part css */
 @media screen and (max-width:576px) {
 
@@ -451,6 +516,7 @@ text-align: center;
     .card-container{
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
     }
     .container1{
         max-width: 357px;
@@ -463,15 +529,9 @@ text-align: center;
     }
     /* slider icon part css */
     #slider-icon{
-        margin-top: 50px;
+        display: none;
     }
-    .slider1{
-        padding: 10px 15px;
-    }
-    .slider2{
-        padding: 10px 15px;
-    }
-    /* Our story part css */
+    /* Our story part */
     .story1{
         display: none;
     }
@@ -565,4 +625,18 @@ text-align: center;
     padding: 10px 20px;
     font-size: 1rem;
     }
+    /* Footerpart */
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+    
+      .footer-column {
+        margin-bottom: 20px;
+      }
+    
+      .social-icons a {
+        margin-right: 5px;
+      }
 }
