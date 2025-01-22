@@ -10,6 +10,7 @@
     padding: 0;
     text-decoration: none;
   }
+  /* navigation-part css */
   .nav-container{
     margin-top: 20px;
     display: flex;
@@ -60,6 +61,31 @@ color: white;
 .hamburger{
     display: none;
 }
+
+/* Hero part css */
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 140px 0px 140px;
+}
+.hero-text{
+    max-width: 640px;
+}
+.hero-text h1{
+    font-size: 3.5rem;
+    font-weight:bold;
+    margin-bottom: 24px;
+}
+.hero-text p{
+    font-size: 1.25rem;
+}
+.hero-image{
+    max-width: 468px;
+}
+
+
+/* responsive part css */
 @media screen and (max-width:576px) {
     .manu-bar,.contact-button,.brand-name{
         display: none;
@@ -72,8 +98,33 @@ color: white;
         border-bottom: 2px solid rgba(254, 163, 1, 1);;
     }
     .hamburger{
-        display: block;
+       display: block;
        font-size: 30px;
         align-items: center;
+    }
+
+    /* hero part responsive */
+    .hero-container{
+        padding-top: 20px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
+    .hero-text{
+        text-align: center;
+        max-width: 357px;
+    }
+    .hero-text h1{
+        padding-top: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .hero-text p{
+        padding-top: 20px;
+        font-size: 1.25rem;
+    }
+    .hero-image img{
+        max-width:335px;
+        
     }
 }
