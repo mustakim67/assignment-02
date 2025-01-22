@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .nav-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .brand{
+    display: flex;
+    align-items: center;
+  }
+  .manu-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;  
+    font-weight: bold;
+  }
+  .manu-bar li{
+    margin-right:35px;
+  }
+  .band-name{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+.contact-button>button{
+padding: 10px 60px;
+background-color: rgba(254, 163, 1, 1);
+border: none;
+border-radius:5px;
+font-size: 1.25rem;
+font-weight: 600;
+color: white;
+}
+.home{
+    color: rgba(254, 163, 1, 1);
+}
+.about{
+    color: rgba(1, 172, 253, 1);
+}
+.facilities{
+    color: rgba(5, 212, 223, 1);
+}
+.admission{
+    color: rgba(93, 88, 239, 1);
+}
+.hamburger{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .manu-bar,.contact-button,.brand-name{
+        display: none;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 16px;
+        margin-top: 0px;
+        border-bottom: 2px solid rgba(254, 163, 1, 1);;
+    }
+    .hamburger{
+        display: block;
+       font-size: 30px;
+        align-items: center;
+    }
+}
