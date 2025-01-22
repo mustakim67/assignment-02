@@ -209,6 +209,185 @@ border-radius: 10px;
 .container3 a{
     font-weight: bold;
 }
+
+
+/* slider part css */
+#slider-icon{
+   margin-top: 80px;
+   margin-bottom: 80px;
+}
+.slider{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.slider1{
+    padding: 15px 20px;
+    background-color: #FEA301;
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+.slider2{
+    padding: 15px 20px;
+    background-color: #FEA301;
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+/* Our stories section css */
+#our-stories{
+    background-image: url(./assets/bg.png);
+    background: linear-gradient(#FFFFFF,#FEA);
+    padding-bottom: 80px;
+}
+.story-heading h2{
+font-size: 2.7rem;
+font-weight: bold;
+text-align: center;
+margin-bottom: 80px;
+}
+.story-container{
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+.story1{
+    max-width: 540px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.story2{
+    background-color: white;
+    padding-bottom: 27px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.story2 h3{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 35px;
+}
+.story1 h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 462px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-left:38px ;
+    
+}
+.story1 p{
+    padding-left:38px ;
+    margin-bottom: 20px;
+}
+.sub-story-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    max-width: 600px;
+}
+.story-image img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.story1>.story-date> p{
+    padding: 10px 15px;
+    max-width: 174px;
+    background-color: #3CD8E8;
+    color: white;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    position: relative;
+    left: 35px;
+     bottom: 30px;
+}
+.story2>.story-date1> p{
+    padding: 10px 15px;
+    max-width: 174px;
+    background-color: #95B226;
+    color: white;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    position: relative;
+    left: 33px;
+     bottom: 30px;
+}
+.story2>.story-date2> p{
+    padding: 10px 15px;
+    max-width: 174px;
+    background-color: #5D58F0;
+    color: white;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    position: relative;
+    left: 33px;
+     bottom: 30px;
+}
+.story2>.story-date3> p{
+    padding: 10px 15px;
+    max-width: 174px;
+    background-color: #95B226;
+    color: white;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    position: relative;
+    left: 33px;
+     bottom: 30px;
+}
+.story2>.story-date4> p{
+    padding: 10px 15px;
+    max-width: 174px;
+    background-color: #95B226;
+    color: white;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+    position: relative;
+    left: 33px;
+    bottom: 30px;
+}
+.view-all{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.view-all button{
+padding: 10px 60px;
+font-size: 1.25rem;
+font-weight: bold;
+background-color: black;
+color: white;
+margin:0 auto;
+border-radius:20px;
+text-align: center;
+}
 /* responsive part css */
 @media screen and (max-width:576px) {
 
@@ -281,5 +460,109 @@ border-radius: 10px;
     }
     .container3{
         max-width: 357px;
+    }
+    /* slider icon part css */
+    #slider-icon{
+        margin-top: 50px;
+    }
+    .slider1{
+        padding: 10px 15px;
+    }
+    .slider2{
+        padding: 10px 15px;
+    }
+    /* Our story part css */
+    .story1{
+        display: none;
+    }
+    .sub-story-container{
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 358px;
+    }
+    .sub-story-container img{
+        max-width: 170px;
+    }
+    .story2>.story-date1> p{
+        font-size: 0.56rem;
+        padding: 5px 11px;
+        max-width: 103px;
+        background-color: #95B226;
+        color: white;
+        border: none;
+        text-align: center;
+        border-top-left-radius: 25px ;
+        border-top-right-radius: 25px ;
+        border-bottom-right-radius: 25px ;
+        border-bottom-left-radius: 25px ;
+        position: relative;
+        left: 22px;
+         bottom: 18px;
+    }
+    .story2>.story-date2> p{
+        font-size: 0.56rem;
+        padding: 5px 11px;
+        max-width: 103px;
+        background-color: #5D58F0;
+        color: white;
+        border: none;
+        text-align: center;
+        border-top-left-radius: 25px ;
+        border-top-right-radius: 25px ;
+        border-bottom-right-radius: 25px ;
+        border-bottom-left-radius: 25px ;
+        position: relative;
+        left: 22px;
+         bottom: 18px;
+    }
+    .story2>.story-date3> p{
+        font-size: 0.56rem;
+        padding: 5px 11px;
+        max-width: 103px;
+        background-color: #95B226;
+        color: white;
+        border: none;
+        text-align: center;
+        border-top-left-radius: 25px ;
+        border-top-right-radius: 25px ;
+        border-bottom-right-radius: 25px ;
+        border-bottom-left-radius: 25px ;
+        position: relative;
+        left: 22px;
+         bottom: 18px;
+    }
+    .story2>.story-date4> p{
+        font-size: 0.56rem;
+        padding: 5px 11px;
+        max-width: 103px;
+        background-color: #95B226;
+        color: white;
+        border: none;
+        text-align: center;
+        border-top-left-radius: 25px ;
+        border-top-right-radius: 25px ;
+        border-bottom-right-radius: 25px ;
+        border-bottom-left-radius: 25px ;
+        position: relative;
+        left: 22px;
+         bottom: 18px;
+    }
+    .story-container{
+        max-width: 358px;
+    }
+    .sub-story-container h3{
+        font-size: 0.6rem;
+    }
+    .view-all{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .view-all button{
+    padding: 10px 20px;
+    font-size: 1rem;
     }
 }
